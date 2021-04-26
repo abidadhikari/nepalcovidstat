@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 10vh;
+  font-size: large;
+  padding: 1rem;
+  background-color: brown;
+}
+
+header h1 a {
+  color: #f2f2f2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: #f4f4f4b7;
+}
+
+.updatelog {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: auto;
+  padding: 0.5rem 0;
+}
+
+section {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+}
+
+section .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .boxes .box {
+  height: 200px;
+  width: 300px;
+  margin: 1rem;
+  border-radius: 16px;
+  -webkit-box-shadow: 5px 5px 10px #d3d3d3;
+          box-shadow: 5px 5px 10px #d3d3d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .boxes .box h2 {
+  font-size: large;
+}
+
+section .boxes .box h3 {
+  color: #3a3636;
+  font-size: 2.5rem;
+}
+
+section .boxes .box.box1 {
+  background-color: #fdf5bf;
+}
+
+section .boxes .box.box3 {
+  background-color: #28a745;
+}
+
+section .boxes .box.box3 h3 {
+  color: white;
+}
+
+section .boxes .box.box5 {
+  background-color: #ffc107;
+}
+
+section .boxes .box.box5 h3 {
+  color: white;
+}
+
+section .boxes .box.box6 {
+  background-color: #dc3545;
+}
+
+section .boxes .box.box6 h3 {
+  color: white;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 6vh;
+  font-family: monospace;
+  font-size: x-large;
+}
+/*# sourceMappingURL=style.css.map */

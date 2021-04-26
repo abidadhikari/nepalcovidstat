@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+@mixin center {
+    display: grid;
+    place-items: center;
+}
+header{
+    @include center;
+    min-height: 10vh;
+    font-size:large;
+    padding: 1rem;
+    // letter-spacing:0.3rem;
+    background-color: brown;
+    h1{
+        a{
+            color: #f2f2f2;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            &:hover{
+                color: #f4f4f4b7;
+            }
+        }
+    }
+}
+.updatelog{
+    @include center;
+    height: auto;
+    padding: 0.5rem 0;
+}
+section{
+    height:auto;
+    width: 100%;
+    padding: 1rem;
+    // background-color: beige;
+    .boxes{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+        .box{
+            height: 200px;
+            width: 300px;
+            // background-color: aquamarine;
+            margin:1rem;
+            border-radius: 16px;
+            box-shadow: 5px 5px 10px #d3d3d3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size:large;
+            }
+            h3{
+                color: rgb(58, 54, 54);
+                font-size:2.5rem;
+                // letter-spacing: 5px;
+            }
+            &.box1{
+                background-color: #fdf5bf;
+            }
+            &.box3{
+                background-color: #28a745;
+                h3{
+                    color: white;
+                }
+            }
+            &.box5{
+                background-color: #ffc107;
+                h3{
+                    color: white;
+                }
+            }
+            &.box6{
+                background-color: #dc3545;
+                h3{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    @include center;
+    height:6vh;
+    font-family: monospace;
+    font-size: x-large;
+    // letter-spacing:0.3rem;
+}
